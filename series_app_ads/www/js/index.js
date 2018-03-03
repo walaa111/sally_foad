@@ -33,12 +33,12 @@ var app = {
 
 	//var inAppBrowserbRef = cordova.InAppBrowser.open('https://electrostar.ovplatform.tk', '_self', 'location=no,toolbar=no');
         //inAppBrowserbRef = cordova.InAppBrowser.open('https://sofra.cbc-eg.com/', '_self', 'location=no,toolbar=no,zoom=no,clearcache=no,clearsessioncache=no');
-        var ref = window.open('https://sofra.cbc-eg.com/%D8%A3%D8%AD%D8%AF%D8%AB_%D8%A7%D9%84%D9%88%D8%B5%D9%81%D8%A7%D8%AA/chef15', '_blank', 'location=no,toolbar=no,zoom=no,clearcache=no,clearsessioncache=no');
+        var ref = window.open('https://sofra.cbc-eg.com/stars/chef15', '_blank', 'location=no,toolbar=no,zoom=no,clearcache=no,clearsessioncache=no');
         ref.addEventListener('loadstop', function() {
   ref.executeScript({
     code: "document.getElementsByTagName('html')[0].innerHTML"
   }, function(html) {
-    alert(html);
+    //alert(html);
     showBannerFunc();
 showInterstitialFunc();
   });
@@ -72,7 +72,7 @@ initAd();
     
 };
 $('body').on('click','.app',function(){
-    alert('d');
+    //alert('d');
 showBannerFunc();
 showInterstitialFunc();
 
